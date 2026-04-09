@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pengujian & Peninjauan — HealthySDGs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--pink-50:#fff0f6;--pink-100:#ffe0ee;--pink-200:#ffc2d9;--pink-300:#ff99be;--pink-400:#ff6b9d;--pink-500:#e84d8a;--pink-600:#c4306e;--blush:#fde8f0;--cream:#fffaf8;--text-dark:#2d1b2e;--text-mid:#6b4b6b;--text-light:#a07090;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-dark);}
+    nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(255,240,246,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--pink-100);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:64px;}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--pink-500);text-decoration:none;}
+    .back-btn{display:inline-flex;align-items:center;gap:6px;color:var(--pink-500);font-size:.88rem;font-weight:600;text-decoration:none;padding:8px 16px;border-radius:999px;border:1.5px solid var(--pink-200);transition:all .2s;}
+    .back-btn:hover{background:var(--pink-50);}
+    .page-hero{min-height:42vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 5% 60px;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(255,154,195,.3) 0%,transparent 70%),var(--cream);}
+    .page-badge{display:inline-block;background:var(--pink-100);color:var(--pink-600);font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:5px 16px;border-radius:999px;margin-bottom:1rem;}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4.5vw,3.5rem);line-height:1.15;margin-bottom:1rem;}
+    h1 em{color:var(--pink-500);font-style:italic;}
+    .page-sub{font-size:1rem;color:var(--text-mid);max-width:520px;margin:0 auto;line-height:1.7;}
+    .content{max-width:860px;margin:0 auto;padding:60px 5%;}
+    .section-label{font-size:.72rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--pink-400);margin-bottom:.5rem;}
+    h2{font-family:'Playfair Display',serif;font-size:1.9rem;margin-bottom:1rem;color:var(--text-dark);}
+    .divider{width:48px;height:3px;background:linear-gradient(90deg,var(--pink-400),var(--pink-200));border-radius:2px;margin:.8rem 0 1.6rem;}
+    p{font-size:.95rem;color:var(--text-mid);line-height:1.75;margin-bottom:1rem;}
+    .feedback-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin:2rem 0;}
+    .fb-card{background:white;border-radius:18px;padding:22px;border:1px solid var(--pink-100);}
+    .fb-rating{display:flex;gap:3px;margin-bottom:8px;}
+    .fb-star{color:var(--pink-400);font-size:1rem;}
+    .fb-text{font-size:.85rem;color:var(--text-mid);line-height:1.6;font-style:italic;}
+    .fb-user{font-size:.75rem;font-weight:600;color:var(--pink-500);margin-top:8px;}
+    .improvement-list{display:flex;flex-direction:column;gap:12px;margin:2rem 0;}
+    .imp-item{display:flex;align-items:flex-start;gap:14px;background:var(--blush);border-radius:14px;padding:16px 20px;}
+    .imp-icon{font-size:1.3rem;flex-shrink:0;}
+    .imp-text{font-size:.88rem;color:var(--text-dark);line-height:1.6;}
+    .imp-text strong{color:var(--pink-600);}
+    footer{background:var(--text-dark);color:rgba(255,255,255,.5);text-align:center;padding:28px 5%;font-size:.8rem;}
+    footer span{color:#ff99be;}
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">🌿 HealthySDGs</a>
+  <a class="back-btn" href="index.html">← Kembali</a>
+</nav>
+
+<div class="page-hero">
+  <div>
+    <div class="page-badge">Tahap 4 · Design Thinking</div>
+    <h1>Pengujian & <em>Peninjauan</em></h1>
+    <p class="page-sub">Menguji prototipe bersama pengguna nyata, mengumpulkan umpan balik, dan menyempurnakan solusi berdasarkan temuan.</p>
+  </div>
+</div>
+
+<div class="content">
+  <div class="section-label">Proses Testing</div>
+  <h2>Siapa yang Menguji?</h2>
+  <div class="divider"></div>
+  <p>Website ini diuji oleh beberapa kelompok pengguna: siswa/mahasiswa yang ingin belajar tentang SDGs, guru/dosen yang membutuhkan referensi materi, dan masyarakat umum yang ingin mengetahui isu kesehatan Indonesia.</p>
+
+  <div class="section-label" style="margin-top:2rem;">Umpan Balik</div>
+  <h2>Apa Kata Pengguna?</h2>
+  <div class="divider"></div>
+  <div class="feedback-grid">
+    <div class="fb-card">
+      <div class="fb-rating"><span class="fb-star">★</span><span class="fb-star">★</span><span class="fb-star">★</span><span class="fb-star">★</span><span class="fb-star">★</span></div>
+      <div class="fb-text">"Tampilannya sangat cantik dan mudah dinavigasi. Fakta-faktanya disajikan dengan jelas dan menarik!"</div>
+      <div class="fb-user">— Responden A, Mahasiswa</div>
+    </div>
+    <div class="fb-card">
+      <div class="fb-rating"><span class="fb-star">★</span><span class="fb-star">★</span><span class="fb-star">★</span><span class="fb-star">★</span><span style="color:#ddd;font-size:1rem;">★</span></div>
+      <div class="fb-text">"Kontennya informatif. Saya suka ada referensi APA-nya. Mungkin bisa ditambah infografis lebih banyak."</div>
+      <div class="fb-user">— Responden B, Guru SMA</div>
+    </div>
+    <div class="fb-card">
+      <div class="fb-rating"><span class="fb-star">★</span><span class="fb-star">★</span><span class="fb-star">★</span><span class="fb-star">★</span><span class="fb-star">★</span></div>
+      <div class="fb-text">"Saya baru tahu soal angka kematian ibu yang masih tinggi. Website ini membuka wawasan saya."</div>
+      <div class="fb-user">— Responden C, Umum</div>
+    </div>
+    <div class="fb-card">
+      <div class="fb-rating"><span class="fb-star">★</span><span class="fb-star">★</span><span class="fb-star">★</span><span class="fb-star">★</span><span style="color:#ddd;font-size:1rem;">★</span></div>
+      <div class="fb-text">"Halaman SDGs grid sangat membantu untuk memahami ke-17 tujuan sekaligus. Bagus!"</div>
+      <div class="fb-user">— Responden D, Pelajar</div>
+    </div>
+  </div>
+
+  <div class="section-label" style="margin-top:2rem;">Perbaikan</div>
+  <h2>Apa yang Ditingkatkan?</h2>
+  <div class="divider"></div>
+  <div class="improvement-list">
+    <div class="imp-item">
+      <div class="imp-icon">📊</div>
+      <div class="imp-text"><strong>Tambah visualisasi data</strong> — Pengguna menyarankan penambahan grafik atau chart untuk memvisualisasikan angka-angka statistik kesehatan Indonesia.</div>
+    </div>
+    <div class="imp-item">
+      <div class="imp-icon">📱</div>
+      <div class="imp-text"><strong>Optimasi mobile</strong> — Beberapa elemen perlu disesuaikan untuk tampilan layar kecil agar nyaman dibaca di smartphone.</div>
+    </div>
+    <div class="imp-item">
+      <div class="imp-icon">🔗</div>
+      <div class="imp-text"><strong>Tautan sumber daya</strong> — Menambahkan link ke sumber terpercaya (Kemenkes, WHO, BPJS) agar pengguna bisa mempelajari lebih lanjut.</div>
+    </div>
+    <div class="imp-item">
+      <div class="imp-icon">🌏</div>
+      <div class="imp-text"><strong>Versi bahasa Inggris</strong> — Beberapa pengguna menyarankan versi dwibahasa untuk menjangkau audiens internasional.</div>
+    </div>
+  </div>
+</div>
+
+<footer><p>🌿 <span>HealthySDGs</span> · Pengujian & Peninjauan · SDG 3</p></footer>
+</body>
+</html>

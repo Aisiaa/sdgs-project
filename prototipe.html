@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prototipe — HealthySDGs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--pink-50:#fff0f6;--pink-100:#ffe0ee;--pink-200:#ffc2d9;--pink-300:#ff99be;--pink-400:#ff6b9d;--pink-500:#e84d8a;--pink-600:#c4306e;--blush:#fde8f0;--cream:#fffaf8;--text-dark:#2d1b2e;--text-mid:#6b4b6b;--text-light:#a07090;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-dark);}
+    nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(255,240,246,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--pink-100);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:64px;}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--pink-500);text-decoration:none;}
+    .back-btn{display:inline-flex;align-items:center;gap:6px;color:var(--pink-500);font-size:.88rem;font-weight:600;text-decoration:none;padding:8px 16px;border-radius:999px;border:1.5px solid var(--pink-200);transition:all .2s;}
+    .back-btn:hover{background:var(--pink-50);}
+    .page-hero{min-height:42vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 5% 60px;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(255,154,195,.3) 0%,transparent 70%),var(--cream);}
+    .page-badge{display:inline-block;background:var(--pink-100);color:var(--pink-600);font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:5px 16px;border-radius:999px;margin-bottom:1rem;}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4.5vw,3.5rem);line-height:1.15;margin-bottom:1rem;}
+    h1 em{color:var(--pink-500);font-style:italic;}
+    .page-sub{font-size:1rem;color:var(--text-mid);max-width:520px;margin:0 auto;line-height:1.7;}
+    .content{max-width:860px;margin:0 auto;padding:60px 5%;}
+    .section-label{font-size:.72rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--pink-400);margin-bottom:.5rem;}
+    h2{font-family:'Playfair Display',serif;font-size:1.9rem;margin-bottom:1rem;color:var(--text-dark);}
+    .divider{width:48px;height:3px;background:linear-gradient(90deg,var(--pink-400),var(--pink-200));border-radius:2px;margin:.8rem 0 1.6rem;}
+    p{font-size:.95rem;color:var(--text-mid);line-height:1.75;margin-bottom:1rem;}
+    .steps{display:flex;flex-direction:column;gap:16px;margin:2rem 0;}
+    .step{display:flex;align-items:flex-start;gap:20px;background:white;border-radius:18px;padding:24px;border:1px solid var(--pink-100);}
+    .step-num{background:var(--pink-500);color:white;font-weight:700;font-size:.9rem;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+    .step-title{font-weight:600;color:var(--text-dark);margin-bottom:4px;}
+    .step-desc{font-size:.85rem;color:var(--text-mid);line-height:1.6;}
+    .wireframe{background:white;border:2px dashed var(--pink-200);border-radius:20px;padding:32px;margin:2rem 0;text-align:center;}
+    .wf-bar{height:14px;background:var(--pink-100);border-radius:8px;margin-bottom:10px;}
+    .wf-bar.short{width:40%;}
+    .wf-bar.mid{width:65%;}
+    .wf-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px;}
+    .wf-block{height:80px;background:var(--pink-50);border:1px solid var(--pink-100);border-radius:10px;}
+    .wf-label{font-size:.75rem;color:var(--text-light);margin-top:12px;font-style:italic;}
+    footer{background:var(--text-dark);color:rgba(255,255,255,.5);text-align:center;padding:28px 5%;font-size:.8rem;}
+    footer span{color:#ff99be;}
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">🌿 HealthySDGs</a>
+  <a class="back-btn" href="index.html">← Kembali</a>
+</nav>
+
+<div class="page-hero">
+  <div>
+    <div class="page-badge">Tahap 3 · Design Thinking</div>
+    <h1>Pembuatan <em>Prototipe</em></h1>
+    <p class="page-sub">Mewujudkan ide terpilih menjadi bentuk nyata yang dapat dilihat, diraba, dan diuji oleh pengguna sesungguhnya.</p>
+  </div>
+</div>
+
+<div class="content">
+  <div class="section-label">Proses Prototyping</div>
+  <h2>Dari Ide ke Wujud Nyata</h2>
+  <div class="divider"></div>
+  <p>Prototipe adalah versi awal dari solusi yang kami bangun. Pada tahap ini, kami tidak membangun produk sempurna — tujuannya adalah membuat sesuatu yang cukup nyata untuk diuji dan mendapat umpan balik.</p>
+
+  <div class="section-label" style="margin-top:2rem;">Langkah-Langkah</div>
+  <h2>Proses Pembuatan</h2>
+  <div class="divider"></div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-title">Menentukan Fitur Utama</div>
+        <div class="step-desc">Memetakan halaman dan konten inti yang harus ada dalam website: halaman beranda, fakta, target SDG 3, dan halaman proses.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-title">Membuat Wireframe</div>
+        <div class="step-desc">Sketsa kasar layout setiap halaman untuk memvisualisasikan struktur sebelum masuk ke kode.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-title">Memilih Estetika Visual</div>
+        <div class="step-desc">Menentukan palet warna pink soft, tipografi Playfair + DM Sans, dan gaya desain yang halus namun informatif.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-title">Membangun dengan HTML & CSS</div>
+        <div class="step-desc">Mengkodekan website menggunakan HTML5, CSS3, dan JavaScript vanilla — tanpa backend, cukup buka di browser.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-title">Review Internal</div>
+        <div class="step-desc">Meninjau prototipe bersama tim sebelum diuji oleh pengguna eksternal. Perbaikan kecil dilakukan di sini.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label" style="margin-top:2rem;">Wireframe</div>
+  <h2>Sketsa Awal</h2>
+  <div class="divider"></div>
+  <div class="wireframe">
+    <div class="wf-bar" style="width:30%; margin:0 auto 16px;"></div>
+    <div class="wf-bar" style="width:70%; margin:0 auto 8px;"></div>
+    <div class="wf-bar short" style="margin:0 auto 24px;"></div>
+    <div class="wf-grid">
+      <div class="wf-block"></div>
+      <div class="wf-block"></div>
+      <div class="wf-block"></div>
+      <div class="wf-block"></div>
+    </div>
+    <div class="wf-label">Wireframe: Halaman Beranda Website SDG 3</div>
+  </div>
+
+  <p>Prototipe yang Anda lihat saat ini — website ini sendiri — adalah hasil dari proses di atas. Ini adalah prototipe fungsional yang siap untuk memasuki tahap pengujian.</p>
+</div>
+
+<footer><p>🌿 <span>HealthySDGs</span> · Pembuatan Prototipe · SDG 3</p></footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Refleksi — HealthySDGs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--pink-50:#fff0f6;--pink-100:#ffe0ee;--pink-200:#ffc2d9;--pink-300:#ff99be;--pink-400:#ff6b9d;--pink-500:#e84d8a;--pink-600:#c4306e;--blush:#fde8f0;--cream:#fffaf8;--text-dark:#2d1b2e;--text-mid:#6b4b6b;--text-light:#a07090;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-dark);}
+    nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(255,240,246,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--pink-100);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:64px;}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--pink-500);text-decoration:none;}
+    .back-btn{display:inline-flex;align-items:center;gap:6px;color:var(--pink-500);font-size:.88rem;font-weight:600;text-decoration:none;padding:8px 16px;border-radius:999px;border:1.5px solid var(--pink-200);transition:all .2s;}
+    .back-btn:hover{background:var(--pink-50);}
+    .page-hero{min-height:50vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 5% 60px;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(255,154,195,.35) 0%,transparent 70%),var(--cream);position:relative;overflow:hidden;}
+    .petal{position:absolute;font-size:2rem;opacity:.15;animation:fall 8s infinite linear;}
+    @keyframes fall{0%{transform:translateY(-50px) rotate(0deg);opacity:.15;}100%{transform:translateY(110vh) rotate(360deg);opacity:0;}}
+    .page-badge{display:inline-block;background:var(--pink-100);color:var(--pink-600);font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:5px 16px;border-radius:999px;margin-bottom:1rem;}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4.5vw,3.5rem);line-height:1.15;margin-bottom:1rem;}
+    h1 em{color:var(--pink-500);font-style:italic;}
+    .page-sub{font-size:1rem;color:var(--text-mid);max-width:520px;margin:0 auto;line-height:1.7;}
+    .content{max-width:860px;margin:0 auto;padding:60px 5%;}
+    .section-label{font-size:.72rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--pink-400);margin-bottom:.5rem;}
+    h2{font-family:'Playfair Display',serif;font-size:1.9rem;margin-bottom:1rem;color:var(--text-dark);}
+    .divider{width:48px;height:3px;background:linear-gradient(90deg,var(--pink-400),var(--pink-200));border-radius:2px;margin:.8rem 0 1.6rem;}
+    p{font-size:.95rem;color:var(--text-mid);line-height:1.75;margin-bottom:1rem;}
+    .learn-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin:2rem 0;}
+    .learn-card{background:white;border-radius:18px;padding:24px;border:1px solid var(--pink-100);text-align:center;}
+    .learn-icon{font-size:2rem;margin-bottom:10px;}
+    .learn-title{font-weight:600;font-size:.9rem;color:var(--text-dark);margin-bottom:6px;}
+    .learn-text{font-size:.82rem;color:var(--text-mid);line-height:1.6;}
+    .closing{background:linear-gradient(135deg,var(--pink-500),var(--pink-300));border-radius:24px;padding:40px;text-align:center;margin:2.5rem 0;color:white;}
+    .closing h3{font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:.8rem;}
+    .closing p{color:rgba(255,255,255,.85);font-size:.95rem;max-width:480px;margin:0 auto;line-height:1.7;}
+    .closing a{display:inline-block;margin-top:1.5rem;background:white;color:var(--pink-600);font-weight:700;padding:12px 28px;border-radius:999px;text-decoration:none;font-size:.9rem;transition:transform .2s;}
+    .closing a:hover{transform:translateY(-2px);}
+    footer{background:var(--text-dark);color:rgba(255,255,255,.5);text-align:center;padding:28px 5%;font-size:.8rem;}
+    footer span{color:#ff99be;}
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">🌿 HealthySDGs</a>
+  <a class="back-btn" href="index.html">← Kembali</a>
+</nav>
+
+<div class="page-hero">
+  <div class="petal" style="left:10%;animation-delay:0s;">🌸</div>
+  <div class="petal" style="left:30%;animation-delay:2s;">🌺</div>
+  <div class="petal" style="left:60%;animation-delay:4s;">🌸</div>
+  <div class="petal" style="left:80%;animation-delay:1s;">🌷</div>
+  <div style="position:relative;z-index:1;">
+    <div class="page-badge">Tahap 5 · Design Thinking</div>
+    <h1><em>Refleksi</em></h1>
+    <p class="page-sub">Menoleh ke belakang, mensyukuri perjalanan, dan memaknai setiap pelajaran yang didapat dari proyek SDG 3 ini.</p>
+  </div>
+</div>
+
+<div class="content">
+  <div class="section-label">Perjalanan Kami</div>
+  <h2>Apa yang Kami Pelajari?</h2>
+  <div class="divider"></div>
+  <p>Proyek SDG 3 ini bukan sekadar tugas sekolah — ini adalah perjalanan memahami realita kesehatan jutaan orang Indonesia. Kami menemukan bahwa di balik angka-angka statistik, ada cerita manusia yang nyata dan kompleks.</p>
+
+  <div class="learn-cards">
+    <div class="learn-card">
+      <div class="learn-icon">🫀</div>
+      <div class="learn-title">Empati adalah Pondasi</div>
+      <div class="learn-text">Tanpa memahami orang yang terdampak, solusi yang kita buat hanya akan relevan di permukaan.</div>
+    </div>
+    <div class="learn-card">
+      <div class="learn-icon">📊</div>
+      <div class="learn-title">Data Bercerita</div>
+      <div class="learn-text">Setiap angka statistik mewakili kehidupan nyata. Memahami data dengan konteks memberi makna yang jauh lebih dalam.</div>
+    </div>
+    <div class="learn-card">
+      <div class="learn-icon">🔄</div>
+      <div class="learn-title">Iterasi itu Penting</div>
+      <div class="learn-text">Prototipe pertama tidak pernah sempurna — justru dari pengujian dan perbaikan, solusi terbaik muncul.</div>
+    </div>
+    <div class="learn-card">
+      <div class="learn-icon">🤝</div>
+      <div class="learn-title">Kolaborasi Menghasilkan</div>
+      <div class="learn-text">Ide terbaik muncul dari diskusi, perbedaan perspektif, dan keberanian untuk berbagi pendapat.</div>
+    </div>
+  </div>
+
+  <div class="section-label" style="margin-top:2rem;">Pencapaian</div>
+  <h2>Apa yang Berhasil Kami Buat?</h2>
+  <div class="divider"></div>
+  <p>Kami berhasil membangun website edukatif lengkap tentang SDG 3 yang mencakup: pengantar 17 SDGs, 5 fakta dan angka dengan referensi APA, target sasaran yang dipilih, serta 5 halaman proses Design Thinking — semua tanpa backend, hanya HTML, CSS, dan JavaScript.</p>
+  <p>Yang lebih penting: kami kini lebih sadar bahwa isu kesehatan adalah tanggung jawab bersama. Setiap langkah kecil — menyebarkan informasi, peduli pada lingkungan sekitar — berkontribusi pada SDG 3.</p>
+
+  <div class="closing">
+    <h3>🌸 Terima Kasih</h3>
+    <p>Terima kasih telah menjelajahi website ini. Mari bersama-sama berkontribusi untuk Indonesia yang lebih sehat dan sejahtera — satu langkah kecil setiap harinya.</p>
+    <a href="index.html">🌿 Kembali ke Beranda</a>
+  </div>
+</div>
+
+<footer><p>🌿 <span>HealthySDGs</span> · Refleksi · SDG 3 — Kehidupan Sehat dan Sejahtera</p></footer>
+</body>
+</html>
